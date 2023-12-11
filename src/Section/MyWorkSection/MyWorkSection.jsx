@@ -1,13 +1,14 @@
-import FullStack from '../../assets/Svg/fullStack.svg';
+import Content from '../../SubSection/Content/Content';
+import ContentTwo from '../../SubSection/Content/ContentTwo';
+import SectionTitle from '../../SubSection/SectionTitle/SectionTitle';
 
 const MyWorkSection = () => {
   return (
-    <div>
-      <div>
-        <img src={FullStack} alt="" />
-      </div>
-      <div></div>
-    </div>
+    <section>
+      <SectionTitle title="what i do?" />
+      <Content />
+      <ContentTwo />
+    </section>
   );
 };
 
