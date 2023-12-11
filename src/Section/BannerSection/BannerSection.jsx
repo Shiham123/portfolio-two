@@ -1,6 +1,7 @@
 import BannerImg from '../../assets/Svg/banner.svg';
 
 import {
+  FaArrowRight,
   FaFacebook,
   FaGithub,
   FaGoogle,
@@ -23,13 +24,45 @@ const BannerSection = () => {
         </p>
 
         {/* icons */}
-        <div>
-          <FaGithub />
-          <FaLinkedin />
-          <FaGoogle />
-          <FaTwitter />
-          <FaFacebook />
-          <FaInstagram />
+        <div className="flex justify-start gap-8">
+          <FaGithub
+            size={50}
+            color="black"
+            className="cursor-pointer hover:scale-110 duration-300"
+          />
+          <FaLinkedin
+            color="#6c99e3"
+            size={50}
+            className="cursor-pointer hover:scale-110 duration-300"
+          />
+          <FaGoogle
+            color="#326c03"
+            size={50}
+            className="cursor-pointer hover:scale-110 duration-300"
+          />
+          <FaTwitter
+            color="#6c99e3"
+            size={50}
+            className="cursor-pointer hover:scale-110 duration-300"
+          />
+          <FaFacebook
+            color="#1877f2"
+            size={50}
+            className="cursor-pointer hover:scale-110 duration-300 "
+          />
+          <FaInstagram
+            color="#e4405f"
+            size={50}
+            className="cursor-pointer hover:scale-110 duration-300"
+          />
+        </div>
+        <div className="my-[2rem]">
+          <button className="bg-colorTwo text-colorSix px-8 py-4 w-2/5 font-playfairDisplay font-bold text-2xl tracking-widest capitalize rounded-lg border-[1px] border-colorTwo hover:bg-transparent hover:text-colorTwo duration-200">
+            <div className="flex justify-center items-center gap-8">
+              <FaArrowRight />
+              <span>My github</span>
+            </div>
+          </button>
         </div>
       </div>
       <div>
