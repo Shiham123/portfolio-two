@@ -5,7 +5,7 @@ const DegreeSection = () => {
     <div>
       <SectionTitle title="Degrees Received" />
 
-      <div className="border-[1px] border-colorTwo rounded-lg my-12">
+      <div className="border-[1px] border-colorTwo dark:border-[1px] dark:border-colorThree  rounded-lg my-12">
         <div className="bg-[#84b7d5] p-12 rounded-t-lg">
           <h1 className="font-playfairDisplay text-colorTwo text-3xl font-semibold flex justify-between">
             Kayamut Ullah govt collage{' '}
@@ -17,19 +17,19 @@ const DegreeSection = () => {
         </div>
 
         <div className="py-12 px-20">
-          <p className="font-playfairDisplay text-colorTwo text-xl font-semibold my-4">
+          <p className="font-playfairDisplay text-colorTwo dark:text-colorOne text-xl font-semibold my-4">
             I have studied here biology chemistry physics
           </p>
-          <p className="font-playfairDisplay text-colorTwo text-xl font-semibold my-4">
+          <p className="font-playfairDisplay text-colorTwo dark:text-colorOne text-xl font-semibold my-4">
             GPA : 4.17
           </p>
-          <p className="font-playfairDisplay text-colorTwo text-xl font-semibold my-4">
+          <p className="font-playfairDisplay text-colorTwo dark:text-colorOne text-xl font-semibold my-4">
             In Science Department
           </p>
         </div>
       </div>
 
-      <div className="border-[1px] border-colorTwo rounded-lg my-12">
+      <div className="border-[1px] border-colorTwo dark:border-[1px] dark:border-colorThree rounded-lg my-12">
         <div className="bg-[#84b7d5] p-12 rounded-t-lg">
           <h1 className="font-playfairDisplay text-colorTwo text-3xl font-semibold flex justify-between">
             Backshigonj govt high school{' '}
@@ -41,13 +41,13 @@ const DegreeSection = () => {
         </div>
 
         <div className="py-12 px-20">
-          <p className="font-playfairDisplay text-colorTwo text-xl font-semibold my-4">
+          <p className="font-playfairDisplay text-colorTwo text-xl dark:text-colorOne font-semibold my-4">
             I have studied here biology chemistry physics
           </p>
-          <p className="font-playfairDisplay text-colorTwo text-xl font-semibold my-4">
+          <p className="font-playfairDisplay text-colorTwo text-xl dark:text-colorOne font-semibold my-4">
             GPA : 4.17
           </p>
-          <p className="font-playfairDisplay text-colorTwo text-xl font-semibold my-4">
+          <p className="font-playfairDisplay text-colorTwo text-xl dark:text-colorOne font-semibold my-4">
             In Science Department
           </p>
         </div>

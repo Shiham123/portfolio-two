@@ -12,7 +12,7 @@ const Knowledge = () => {
 
       <div className="flex flex-col justify-center items-center gap-4 md:grid md:grid-cols-2 md:gap-8 lg:grid lg:grid-cols-3 lg:gap-12 my-[10rem]">
         {/* one */}
-        <div className="border-[1px] border-colorTwo shadow-lg shadow-colorTwo p-8 rounded-lg h-full hover:scale-110 duration-300">
+        <div className="border-[1px] border-colorTwo shadow-lg shadow-colorTwo dark:shadow-lg dark:shadow-colorFive p-8 rounded-lg h-full hover:scale-110 duration-300">
           <div className="w-full object-contain">
             <img
               src={DataStructure}
@@ -22,10 +22,10 @@ const Knowledge = () => {
             />
           </div>
           <div>
-            <h1 className="text-3xl font-playfairDisplay text-center my-12 text-colorTwo">
+            <h1 className="text-3xl font-playfairDisplay text-center my-12 text-colorTwo dark:text-colorOne">
               Data Structure JS
             </h1>
-            <p className="text-2xl font-playfairDisplay text-center my-4 text-colorTwo">
+            <p className="text-2xl font-playfairDisplay text-center my-4 text-colorTwo dark:text-colorOne">
               From YouTuber{' '}
               <span className="font-extrabold">
                 <a href={youtubeLink} target="_blank" rel="noopener noreferrer">
@@ -37,7 +37,7 @@ const Knowledge = () => {
         </div>
 
         {/* two */}
-        <div className="border-[1px] border-colorTwo shadow-lg shadow-colorTwo p-8 rounded-lg h-full hover:scale-110 duration-300">
+        <div className="border-[1px] border-colorTwo shadow-lg shadow-colorTwo dark:shadow-lg dark:shadow-colorFive p-8 rounded-lg h-full hover:scale-110 duration-300">
           <div className="w-full object-contain">
             <img
               src={Algorithms}
@@ -48,10 +48,10 @@ const Knowledge = () => {
           </div>
 
           <div>
-            <h1 className="text-3xl font-playfairDisplay text-center my-12 text-colorTwo">
+            <h1 className="text-3xl font-playfairDisplay text-center my-12 text-colorTwo dark:text-colorOne">
               Algorithms JS
             </h1>
-            <p className="text-2xl font-playfairDisplay text-center my-4 text-colorTwo">
+            <p className="text-2xl font-playfairDisplay text-center my-4 text-colorTwo dark:text-colorOne">
               From YouTuber{' '}
               <span className="font-extrabold">
                 <a href={youtubeLink} target="_blank" rel="noopener noreferrer">
