@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import Box from '@mui/joy/Box';
 import Button from '@mui/joy/Button';
 import IconButton from '@mui/joy/IconButton';
@@ -10,6 +9,7 @@ import ColorLensRoundedIcon from '@mui/icons-material/ColorLensRounded';
 
 const FooterSection = () => {
   const [color, setColor] = useState('primary');
+
   return (
     <Sheet
       variant="solid"
@@ -18,7 +18,7 @@ const FooterSection = () => {
       sx={{
         flexGrow: 1,
         display: 'flex',
-        bgcolor: color === '#edf9fe' ? '#001c55' : undefined,
+        bgcolor: color === 'primary' ? '#001c55' : undefined,
         p: { xs: '36px', md: '70px' },
         pt: { xs: '24px', md: '60px' },
         borderRadius: 'lg',
@@ -29,7 +29,7 @@ const FooterSection = () => {
       <Box sx={{ zIndex: 1, position: 'relative' }}>
         <Typography level="h2">Shiham Bin Yousuf</Typography>
         <Typography sx={{ mt: 0.5, mb: 2 }}>
-          This portfolio create with react and tailwind
+          This portfolio is created with React and Tailwind
         </Typography>
         <Box
           sx={{
@@ -40,7 +40,7 @@ const FooterSection = () => {
             '& > *': { flexGrow: 1, fontWeight: 'lg' },
           }}
         >
-          <Button sx={{ minWidth: 120 }}>DownLoad CV</Button>
+          <Button sx={{ minWidth: 120 }}>Download CV</Button>
           <Button
             variant="plain"
             endDecorator={<ArrowForwardIcon fontSize="md" />}
@@ -69,8 +69,9 @@ const FooterSection = () => {
         onClick={() => {
           const colors = ['primary', 'neutral', 'danger', 'success', 'warning'];
 
-          const nextColorIndex = colors.indexOf(color) + 1;
-          setColor(colors[nextColorIndex] ?? colors[0]);
+          const currentIndex = colors.indexOf(color);
+          const nextColorIndex = (currentIndex + 1) % colors.length;
+          setColor(colors[nextColorIndex]);
         }}
       >
         <ColorLensRoundedIcon fontSize="small" />
