@@ -12,7 +12,7 @@ import {
 
 const BannerSection = () => {
   return (
-    <div className="bg-colorOne dark:bg-colorFour flex flex-col lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-4 md:flex md:flex-col mt-[5rem]">
+    <div className="bg-colorOne dark:bg-colorTwo flex flex-col lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-4 md:flex md:flex-col mt-[5rem]">
       <div>
         <h1 className="w-2/3 font-playfairDisplay text-3xl md:text-4xl lg:text-5xl font-bold capitalize tracking-widest border-b-[1px] border-colorThree py-4 dark:text-colorSix">
           Shiham Bin Yousuf
