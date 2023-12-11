@@ -5,9 +5,9 @@ const DegreeSection = () => {
     <div>
       <SectionTitle title="Degrees Received" />
 
-      <div className="border-[1px] border-colorTwo dark:border-[1px] dark:border-colorThree  rounded-lg my-12">
+      <div className="border-[1px] border-colorTwo dark:border-[1px] dark:border-colorThree rounded-lg my-12">
         <div className="bg-[#84b7d5] p-12 rounded-t-lg">
-          <h1 className="font-playfairDisplay text-colorTwo text-3xl font-semibold flex justify-between">
+          <h1 className="font-playfairDisplay text-colorTwo text-3xl font-semibold md:flex md:flex-col lg:flex lg:flex-row lg:justify-between">
             Kayamut Ullah govt collage{' '}
             <span className="text-2xl">2016-2020</span>
           </h1>
@@ -16,7 +16,7 @@ const DegreeSection = () => {
           </p>
         </div>
 
-        <div className="py-12 px-20">
+        <div className="py-12 lg:px-20 md:px-10 px-4">
           <p className="font-playfairDisplay text-colorTwo dark:text-colorOne text-xl font-semibold my-4">
             I have studied here biology chemistry physics
           </p>
@@ -29,9 +29,10 @@ const DegreeSection = () => {
         </div>
       </div>
 
+      {/* two */}
       <div className="border-[1px] border-colorTwo dark:border-[1px] dark:border-colorThree rounded-lg my-12">
         <div className="bg-[#84b7d5] p-12 rounded-t-lg">
-          <h1 className="font-playfairDisplay text-colorTwo text-3xl font-semibold flex justify-between">
+          <h1 className="font-playfairDisplay text-colorTwo text-3xl font-semibold md:flex md:flex-col lg:flex lg:flex-row lg:justify-between">
             Backshigonj govt high school{' '}
             <span className="text-2xl">2013-2015</span>
           </h1>
@@ -40,7 +41,7 @@ const DegreeSection = () => {
           </p>
         </div>
 
-        <div className="py-12 px-20">
+        <div className="py-12 lg:px-20 md:px-10 px-4">
           <p className="font-playfairDisplay text-colorTwo text-xl dark:text-colorOne font-semibold my-4">
             I have studied here biology chemistry physics
           </p>
