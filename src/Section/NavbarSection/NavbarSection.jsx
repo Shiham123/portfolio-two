@@ -28,8 +28,17 @@ const NavbarSection = () => {
                 const { label, to } = item;
                 return (
                   <div key={index}>
-                    <NavLink to={to}>
-                      <li>{label}</li>
+                    <NavLink
+                      to={to}
+                      className={({ isActive }) =>
+                        isActive
+                          ? 'font-playfairDisplay text-xl font-semibold tracking-wider'
+                          : 'font-playfairDisplay text-xl tracking-wider'
+                      }
+                    >
+                      <li className="hover:bg-colorThree px-4 py-2 rounded-lg duration-300 hover:text-colorOne">
+                        {label}
+                      </li>
                     </NavLink>
                   </div>
                 );
