@@ -1,5 +1,11 @@
+import ProjectBanner from './ProjectBanner';
+
 const ProjectPage = () => {
-  return <div>this is project page</div>;
+  return (
+    <div className="min-h-screen">
+      <ProjectBanner />
+    </div>
+  );
 };
 
 export default ProjectPage;
