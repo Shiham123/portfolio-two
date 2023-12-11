@@ -2,6 +2,9 @@ import { NavLink } from 'react-router-dom';
 import LogoLight from '../../assets/_06cc4017-b38b-4b61-a4a2-2871c9b6d694.jpg';
 
 import { FaBars } from 'react-icons/fa';
+import UseTheme from '../../Hooks/useTheme';
+
+import { CiDark, CiLight } from 'react-icons/ci';
 
 const routeData = [
   { label: 'Home', to: '/' },
@@ -12,9 +15,11 @@ const routeData = [
 ];
 
 const NavbarSection = () => {
+  const { changeTheme, mode } = UseTheme();
+
   return (
     <div>
-      <div className="navbar bg-colorOne px-8 py-4">
+      <div className="navbar bg-colorOne px-8 py-4 dark:bg-colorFour rounded-lg shadow-lg shadow-colorTwo dark:shadow-lg dark:shadow-colorFive">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="lg:hidden">
@@ -73,7 +78,7 @@ const NavbarSection = () => {
                           : 'font-playfairDisplay text-xl tracking-wider'
                       }
                     >
-                      <li className="hover:bg-colorThree px-4 py-2 rounded-lg duration-300 hover:text-colorOne">
+                      <li className="dark:text-colorFive hover:bg-colorThree px-4 py-2 rounded-lg duration-300 hover:text-colorOne">
                         {label}
                       </li>
                     </NavLink>
@@ -84,7 +89,13 @@ const NavbarSection = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <button onClick={changeTheme}>
+            {mode === 'light' ? (
+              <CiLight size={40} color="#001c55" />
+            ) : (
+              <CiDark size={40} color="yellow" />
+            )}
+          </button>
         </div>
       </div>
     </div>
