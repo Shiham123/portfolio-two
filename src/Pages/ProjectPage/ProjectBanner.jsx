@@ -176,6 +176,16 @@ const ProjectBanner = () => {
           </div>
         </div>
       </div>
+
+      <button className="bg-colorTwo dark:text-colorTwo dark:bg-colorFive dark:hover:bg-transparent dark:border-2 dark:border-colorFive dark:hover:text-colorFive text-colorOne m-auto text-center w-full py-4 my-4 rounded-lg border-colorTwo border-2 hover:bg-transparent hover:text-colorTwo duration-200 text-4xl font-playfairDisplay font-bold tracking-widest">
+        <a
+          rel="noopener noreferrer"
+          href="https://github.com/Shiham123"
+          target="_blank"
+        >
+          More Project
+        </a>
+      </button>
     </div>
   );
 };
